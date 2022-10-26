@@ -1,17 +1,22 @@
 import React from 'react';
+import { useLoaderData } from 'react-router-dom';
+import SingleCoursecard from './SingleCourseCard/SingleCoursecard';
 
-const CourseCard = ({ course }) => {
+
+const CourseCard = () => {
+
+    const courses = useLoaderData()
+    console.log(courses)
+
     return (
         <div>
-            <div className="h-full card w-50 bg-base-100 shadow-xl">
-                <figure><img src={course.image_url} alt="Shoes" /></figure>
-                <div className="card-body">
-                    <h2 className="card-title">{course.title}</h2>
-                    <p>If a dog chews shoes whose shoes does he choose?</p>
-                    <div className="card-actions justify-end">
-                        <button className="btn btn-primary">Get Access</button>
-                    </div>
-                </div>
+            <div className=' ml-10 grid md:grid-cols-3 gap-4 sm:grid-cols-1'>
+                {
+                    courses.map(course => <SingleCoursecard
+                        key={course.id}
+                        course={course}
+                    ></SingleCoursecard>)
+                }
             </div>
         </div>
     );
