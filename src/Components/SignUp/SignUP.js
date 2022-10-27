@@ -82,9 +82,9 @@ const SignUP = () => {
 
     return (
         <div >
-            <div className="hero min-h-screen bg-base-200">
-                <div className="hero-content flex-row">
-                    <div className="text-center lg:text-left">
+            <div className="hero min-h-screen bg-base-200 ">
+                <div className="hero-content flex-col">
+                    <div className="text-center lg:text-left mb-10">
                         <h1 className="text-5xl font-bold">Please Register Now!</h1>
                     </div>
                     <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">

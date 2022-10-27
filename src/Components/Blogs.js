@@ -1,173 +1,67 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const Blogs = () => {
+    const Item = ({ title, children }) => {
+        const [isOpen, setIsOpen] = useState(false);
+        return (
+            <div className="border rounded shadow-sm">
+                <button
+                    type="button"
+                    aria-label="Open item"
+                    title="Open item"
+                    className="flex items-center justify-between w-full p-4 focus:outline-none"
+                    onClick={() => setIsOpen(!isOpen)}
+                >
+                    <p className="text-lg font-medium">{title}</p>
+                    <div className="flex items-center justify-center w-8 h-8 border rounded-full">
+
+
+
+
+                    </div>
+                </button>
+                {isOpen && (
+                    <div className="p-4 pt-0">
+                        <p className="text-gray-700">{children}</p>
+                    </div>
+                )}
+            </div>
+        );
+    };
     return (
         <div>
-            <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-                <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
-                    <div>
-                        <p className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-teal-accent-400">
-                            Brand new
-                        </p>
-                    </div>
-                    <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
-                        <span className="relative inline-block">
-                            <svg
-                                viewBox="0 0 52 24"
-                                fill="currentColor"
-                                className="absolute top-0 left-0 z-0 hidden w-32 -mt-8 -ml-20 text-blue-gray-100 lg:w-32 lg:-ml-28 lg:-mt-10 sm:block"
-                            >
-                                <defs>
-                                    <pattern
-                                        id="ea469ae8-e6ec-4aca-8875-fc402da4d16e"
-                                        x="0"
-                                        y="0"
-                                        width=".135"
-                                        height=".30"
-                                    >
-                                        <circle cx="1" cy="1" r=".7" />
-                                    </pattern>
-                                </defs>
-                                <rect
-                                    fill="url(#ea469ae8-e6ec-4aca-8875-fc402da4d16e)"
-                                    width="52"
-                                    height="24"
-                                />
-                            </svg>
-                            <span className="relative">The</span>
-                        </span>{' '}
-                        quick, brown fox jumps over a lazy dog
-                    </h2>
-                    <p className="text-base text-gray-700 md:text-lg">
-                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                        accusantium doloremque rem aperiam, eaque ipsa quae.
-                    </p>
-                </div>
-                <div className="grid gap-8 row-gap-10 lg:grid-cols-2">
-                    <div className="max-w-md sm:mx-auto sm:text-center">
-                        <div className="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-indigo-50 sm:mx-auto sm:w-24 sm:h-24">
-                            <svg
-                                className="w-12 h-12 text-deep-purple-accent-400 sm:w-16 sm:h-16"
-                                stroke="currentColor"
-                                viewBox="0 0 52 52"
-                            >
-                                <polygon
-                                    strokeWidth="3"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    fill="none"
-                                    points="29 13 14 29 25 29 23 39 38 23 27 23"
-                                />
-                            </svg>
+            <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+                <div class="max-w-xl sm:mx-auto lg:max-w-2xl">
+                    <div class="flex flex-col mb-16 sm:text-center">
+                        <div class="max-w-xl md:mx-auto sm:text-center lg:max-w-2xl">
+                            <h2 class="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
+                                <span class="relative inline-block">
+                                    <span class="relative text-violet-500">Personal Blog</span>
+                                </span>{' '}
+
+                            </h2>
+                            <p class="text-base text-gray-700 md:text-lg text-violet-500">
+                            </p>
                         </div>
-                        <h6 className="mb-3 text-xl font-bold leading-5">The deep ocean</h6>
-                        <p className="mb-3 text-sm text-gray-900">
-                            A flower in my garden, a mystery in my panties. Heart attack never
-                            stopped old Big Bear. I didn't even know we were calling him Big
-                            Bear. We never had the chance to.
-                        </p>
-                        <a
-                            href="/"
-                            aria-label=""
-                            className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
-                        >
-                            Learn more
-                        </a>
                     </div>
-                    <div className="max-w-md sm:mx-auto sm:text-center">
-                        <div className="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-indigo-50 sm:mx-auto sm:w-24 sm:h-24">
-                            <svg
-                                className="w-12 h-12 text-deep-purple-accent-400 sm:w-16 sm:h-16"
-                                stroke="currentColor"
-                                viewBox="0 0 52 52"
-                            >
-                                <polygon
-                                    strokeWidth="3"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    fill="none"
-                                    points="29 13 14 29 25 29 23 39 38 23 27 23"
-                                />
-                            </svg>
-                        </div>
-                        <h6 className="mb-3 text-xl font-bold leading-5">When has justice</h6>
-                        <p className="mb-3 text-sm text-gray-900">
-                            Rough pomfret lemon shark plownose chimaera southern sandfish
-                            kokanee northern sea robin Antarctic cod. Yellow-and-black triplefin
-                            gulper South American Lungfish mahi-mahi, butterflyfish glass
-                            catfish soapfish ling gray mullet!
-                        </p>
-                        <a
-                            href="/"
-                            aria-label=""
-                            className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
-                        >
-                            Learn more
-                        </a>
-                    </div>
-                    <div className="max-w-md sm:mx-auto sm:text-center">
-                        <div className="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-indigo-50 sm:mx-auto sm:w-24 sm:h-24">
-                            <svg
-                                className="w-12 h-12 text-deep-purple-accent-400 sm:w-16 sm:h-16"
-                                stroke="currentColor"
-                                viewBox="0 0 52 52"
-                            >
-                                <polygon
-                                    strokeWidth="3"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    fill="none"
-                                    points="29 13 14 29 25 29 23 39 38 23 27 23"
-                                />
-                            </svg>
-                        </div>
-                        <h6 className="mb-3 text-xl font-bold leading-5">Organically grow</h6>
-                        <p className="mb-3 text-sm text-gray-900">
-                            A slice of heaven. O for awesome, this chocka full cuzzie is as
-                            rip-off as a cracker. Meanwhile, in behind the bicycle shed,
-                            Hercules Morse, as big as a horse and Mrs Falani were up to no good
-                            with a bunch of crook pikelets.
-                        </p>
-                        <a
-                            href="/"
-                            aria-label=""
-                            className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
-                        >
-                            Learn more
-                        </a>
-                    </div>
-                    <div className="max-w-md sm:mx-auto sm:text-center">
-                        <div className="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-indigo-50 sm:mx-auto sm:w-24 sm:h-24">
-                            <svg
-                                className="w-12 h-12 text-deep-purple-accent-400 sm:w-16 sm:h-16"
-                                stroke="currentColor"
-                                viewBox="0 0 52 52"
-                            >
-                                <polygon
-                                    strokeWidth="3"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    fill="none"
-                                    points="29 13 14 29 25 29 23 39 38 23 27 23"
-                                />
-                            </svg>
-                        </div>
-                        <h6 className="mb-3 text-xl font-bold leading-5">
-                            A slice of heaven
-                        </h6>
-                        <p className="mb-3 text-sm text-gray-900">
-                            Disrupt inspire and think tank, social entrepreneur but preliminary
-                            thinking think tank compelling. Inspiring, invest synergy capacity
-                            building, white paper; silo, unprecedented challenge B-corp
-                            problem-solvers.
-                        </p>
-                        <a
-                            href="/"
-                            aria-label=""
-                            className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
-                        >
-                            Learn more
-                        </a>
+                    <div class="space-y-4">
+                        <Item title="The quick, brown fox jumps over a lazy dog?">
+                            <p className='text-violet-500'> Cross-Origin Resource Sharing (CORS) is an HTTP-header based mechanism that allows a server to indicate any origins (domain, scheme, or port) other than its own from which a browser should permit loading resources. CORS is an abbreviation for Cross-Origin Response Sharing. It is what allows the website on one URL to request data from a different URL, and it frustrates both the frontend and backend devs alike</p>
+                        </Item>
+                        <Item title="Why are you using firebase?other options we have to implement authentication?">
+                            <p className='text-violet-500'> Firebase Authentication provides backend services, easy-to-use SDKs, and ready-made UI libraries to authenticate users to your app. It supports authentication using passwords, phone numbers, popular federated identity providers like Google, Facebook and Twitter, and more.
+                                The other options are MongoDB, Oracle Database, Amazon Redshift etc.</p>
+                        </Item>
+                        <Item title="How does the private route work?">
+                            <p className='text-violet-600'>
+                                The private route component is similar to the public route, the only change is that redirect URL and authenticate condition. If the user is not authenticated he will be redirected to the login page and the user can only access the authenticated routes If he is authenticated (Logged in).
+                            </p>
+                        </Item>
+                        <Item title="What is Node? How does Node work?">
+                            <p className='text-violet-600'>
+                                SNode is a used as backend service where javascript works on the server-side of the application. This way javascript is used on both frontend and backend. Node. js runs on chrome v8 engine which converts javascript code into machine code, it is highly scalable, lightweight, fast, and data-intensive.
+                            </p>
+                        </Item>
                     </div>
                 </div>
             </div>
