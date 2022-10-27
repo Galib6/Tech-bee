@@ -9,42 +9,38 @@ const HomePageBasicInfo = () => {
                     <div className="flex flex-col justify-center">
                         <div className="max-w-xl mb-6">
                             <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none text-violet-700">
-                                The quick, brown fox
+                                Upskill your team
                                 <br className="hidden md:block" />
-                                jumps over{' '}
+                                with Unlimited access to 500+ Top{' '}
                                 <span className="relative px-1">
                                     <div className="absolute inset-x-0 bottom-0 h-3 transform -skew-x-12 bg-teal-accent-400" />
                                     <span className="relative inline-block text-violet-700">
-                                        a lazy dog
+                                        TechBee courses, anytime, anywhere
                                     </span>
                                 </span>
                             </h2>
                             <p className="text-base text-gray-700 md:text-lg text-violet-700">
-                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-                                quae. explicabo.
+                                Take one of TechBees range of Python courses and learn how to code using this incredibly useful language. Its simple syntax and readability makes Python perfect for Flask, Django, data science, and machine learning. Youll learn how to build everything from games to sites to apps
                             </p>
                         </div>
                         <div className="grid gap-5 row-gap-8 sm:grid-cols-2">
                             <div className=" border-l-4 border-violet-700 shadow-sm border-deep-purple-accent-400 text-violet-500">
                                 <div className="h-full p-5  border-l-0 rounded-r">
                                     <h6 className="mb-2 font-semibold leading-5">
-                                        I'll be sure to note that in my log
+                                        Unlock the power of your people
                                     </h6>
                                     <p className="text-sm text-violet-600">
-                                        Lookout flogging bilge rat main sheet bilge water nipper fluke
-                                        to go on account heave down.
+                                        TechBee Business is trusted by 12.5K+ companies around the world. Find out what we can do for yours.
                                     </p>
                                 </div>
                             </div>
                             <div className="border-l-4 border-violet-500 ">
                                 <div className="h-full p-5  border-l-0 rounded-r">
                                     <h6 className="mb-2 font-semibold leading-5 text-violet-500">
-                                        A business big enough that it could be listed
+                                        Learning that gets you
                                     </h6>
                                     <p className="text-sm text-violet-600">
-                                        Those options are already baked in with this model shoot me an
-                                        email clear.
+                                        Skills for your present (and your future). Get started with us.
                                     </p>
                                 </div>
                             </div>
@@ -85,32 +81,18 @@ const HomePageBasicInfo = () => {
                 <div className="flex flex-col items-start max-w-screen-sm md:flex-row sm:mx-auto">
                     <a href="/" className="mb-4 mr-8">
                         <div className="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-indigo-50">
-                            <svg
-                                className="w-12 h-12 text-deep-purple-accent-400"
-                                stroke="currentColor"
-                                viewBox="0 0 52 52"
-                            >
-                                <polygon
-                                    strokeWidth="3"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    fill="none"
-                                    points="29 13 14 29 25 29 23 39 38 23 27 23"
-                                />
-                            </svg>
+                            <img src="https://www.freeiconspng.com/thumbs/bee-icon/bee-icon-9.png" alt="" />
                         </div>
                     </a>
                     <div>
                         <p className="mb-2 text-xs font-semibold tracking-wide text-gray-800 uppercase text-violet-600">
-                            New History
+                            Thousands of institutions use Tech Bee
                         </p>
                         <h2 className="mb-4 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none text-violet-500" >
-                            Cheese on toast tale
+                            Take the next step toward your personal and professional goals with Tech Bee.
                         </h2>
                         <p className="text-base text-gray-700 md:text-lg text-violet-600">
-                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-                            quae.
+                            Start, switch, or advance your career with more than 5,200 courses, Professional Certificates, and degrees from world-class universities and companies.
                         </p>
                     </div>
                 </div>
