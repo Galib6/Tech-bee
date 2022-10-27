@@ -49,7 +49,7 @@ const HomePageBasicInfo = () => {
                                     type="submit"
                                     className="inline-flex items-center justify-center h-12 px-6 mr-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-violet-500 hover:bg-violet-700 focus:shadow-outline focus:outline-none"
                                 >
-                                    <Link to="/login">Get Started</Link>
+                                    <Link to="/courses/all">Get Started</Link>
                                 </button>
                                 <a
                                     href="/"
