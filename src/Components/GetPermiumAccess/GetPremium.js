@@ -1,14 +1,13 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
-import Pdf from "react-to-pdf";
-const ref = React.createRef();
+
 
 const GetPremium = () => {
 
     const details = useLoaderData()
     console.log(details)
     return (
-        <div ref={ref} style={{ width: 900, height: 500 }}>
+        <div >
             <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
                 <p className="mb-2 text-xs font-semibold tracking-wide text-gray-600 uppercase sm:text-center">
                     Tech Bee
@@ -32,9 +31,7 @@ const GetPremium = () => {
                         Thank you! Please start leaning form YOU COURSES section
                     </p>
                 </div>
-                <Pdf targetRef={ref} filename="code-example.pdf" className="flex">
-                    {({ toPdf }) => <button className="btn btn-sm" onClick={toPdf}>Generate Pdf</button>}
-                </Pdf>
+
             </div>
         </div>
     );

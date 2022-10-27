@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link, useLoaderData } from 'react-router-dom';
+import Pdf from "react-to-pdf";
+const ref = React.createRef();
 
 
 
@@ -8,8 +10,11 @@ const Coursedetails = () => {
     // console.log(details)
     const { details, image_url, rating, created_by, title, id } = details1
     return (
-        <div className='ml-20 '>
+        <div className='ml-20 ' ref={ref} >
             <div className="card bg-base-100 shadow-xl w-10/12">
+                <Pdf targetRef={ref} filename="code-example.pdf" className="flex">
+                    {({ toPdf }) => <button className="btn btn-sm" onClick={toPdf}>Generate Pdf</button>}
+                </Pdf>
                 <figure><img src={image_url} alt="courses" /></figure>
                 <div className="card-body">
                     <h2 className="card-title">
