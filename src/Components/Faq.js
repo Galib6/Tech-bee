@@ -13,21 +13,7 @@ const Item = ({ title, children }) => {
             >
                 <p className="text-lg font-medium">{title}</p>
                 <div className="flex items-center justify-center w-8 h-8 border rounded-full">
-                    <svg
-                        viewBox="0 0 24 24"
-                        className={`w-3 text-gray-600 transition-transform duration-200 ${isOpen ? 'transform rotate-180' : ''
-                            }`}
-                    >
-                        <polyline
-                            fill="none"
-                            stroke="currentColor"
-                            strokeWidth="2"
-                            strokeLinecap="round"
-                            strokeMiterlimit="10"
-                            points="2,7 12,17 22,7"
-                            strokeLinejoin="round"
-                        />
-                    </svg>
+
                 </div>
             </button>
             {isOpen && (
