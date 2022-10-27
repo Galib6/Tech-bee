@@ -27,7 +27,7 @@ const GetPremium = () => {
                         </a>
                     </div>
                     <p>Your name:</p>
-                    <input type="text" placeholder="Your Name" className="input input-bordered input-secondary w-full max-w-xs my-10" />
+                    <input type="text" placeholder="Your Name" className="input input-bordered input-secondary w-full max-w-xs my-3" />
                     <p className="text-base text-gray-700 md:text-lg">
                         Thank you! Please start leaning form YOU COURSES section
                     </p>
