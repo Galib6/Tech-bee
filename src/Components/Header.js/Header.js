@@ -57,7 +57,7 @@ const Header = () => {
                         </>
                     </ul>
                 </div>
-                <a href="/" className="btn btn-ghost normal-case text-3xl"><CgBee /> Tech Bee</a>
+                <Link href="/" className="btn btn-ghost normal-case text-3xl"><CgBee /> Tech Bee</Link>
             </div>
             <div className="navbar-center hidden lg:flex ">
                 <ul className="menu menu-horizontal p-0">

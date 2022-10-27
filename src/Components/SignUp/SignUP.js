@@ -34,6 +34,7 @@ const SignUP = () => {
                 setLoadding(true)
                 const user = res.user;
                 setUser(user)
+                console.log(user)
                 toast.success("Seccessfully Sign up")
             })
             .catch(err => {
