@@ -30,4 +30,5 @@ const SingleCoursecard = ({ course }) => {
     );
 };
 
+
 export default SingleCoursecard;

@@ -63,7 +63,6 @@ const Header = () => {
                                     <li><Link to="/signup">Sign up</Link></li>
                                 </>
                         }
-
                     </>
                 </ul>
             </div>
