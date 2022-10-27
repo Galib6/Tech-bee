@@ -22,7 +22,7 @@ const GetPremium = () => {
                             className="inline-block max-w-lg font-sans text-3xl font-extrabold leading-none tracking-tight text-pink-600 "
                         >
 
-                            {details.title}
+                            {details?.title}
                         </a>
                     </div>
                     <p className="text-base text-gray-700 md:text-lg">

@@ -16,7 +16,6 @@ const Coursedetails = () => {
                         <div className="badge badge-secondary">{title}</div>
                     </h2>
                     <p>{details}</p>
-
                     <div className="card-actions justify-end">
                         <button className="btn btn-active btn-sm btn-accent"> <Link to={id}>Get Premium Access</Link> </button>
                         <div className="rating">

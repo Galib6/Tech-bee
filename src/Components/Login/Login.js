@@ -66,6 +66,7 @@ const Login = () => {
                                 <label className="label">
                                     <Link href="#" className=" text-red-600 label-text-alt link link-hover">{error}</Link>
                                 </label>
+                                <p>New to Tech Bee? <Link to="/signup">Create a new account</Link></p>
                             </div>
                             <div className="form-control mt-6">
                                 <button className="btn btn-primary">Login</button>
