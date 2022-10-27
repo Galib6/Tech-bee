@@ -6,10 +6,10 @@ import toast, { Toaster } from 'react-hot-toast';
 
 function App() {
   return (
-    <div data-theme="lemonade">
-      <RouterProvider router={routes}></RouterProvider>
+    <div>
+      < RouterProvider router={routes} ></RouterProvider >
       <Toaster></Toaster>
-    </div>
+    </div >
   );
 }
 

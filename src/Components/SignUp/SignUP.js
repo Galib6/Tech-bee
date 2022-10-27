@@ -1,4 +1,4 @@
-import { GoogleAuthProvider } from 'firebase/auth';
+import { GithubAuthProvider, GoogleAuthProvider } from 'firebase/auth';
 import React, { useContext } from 'react';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
@@ -7,14 +7,29 @@ import toast from 'react-hot-toast';
 import { FaGoogle, FaGithub } from 'react-icons/fa';
 
 const SignUP = () => {
-    const { setUser, setLoadding, createUser, updateUserProfile } = useContext(AuthContext)
+    const { setUser, setLoadding, createUser, updateUserProfile, signInwithGitHub } = useContext(AuthContext)
     const { signInwithGoolge } = useContext(AuthContext);
     const provider = new GoogleAuthProvider();
+    const gitHubprovider = new GithubAuthProvider()
+
 
     const [error, setError] = useState("")
 
     const handleGoogleSignIn = () => {
         signInwithGoolge(provider)
+            .then(res => {
+                setLoadding(true)
+                const user = res.user;
+                setUser(user)
+                toast.success("Seccessfully Sign up")
+            })
+            .catch(err => {
+                console.error(err)
+            })
+    }
+
+    const handleGitHUbSignIn = () => {
+        signInwithGitHub(gitHubprovider)
             .then(res => {
                 setLoadding(true)
                 const user = res.user;
@@ -107,7 +122,7 @@ const SignUP = () => {
                         </form>
                         <div className='flex justify-center'>
                             <button onClick={handleGoogleSignIn} className=" mb-5 mr-5 btn btn-outline btn-ghost">< FaGoogle /><span className='ml-2'>google</span></button>
-                            <button className=" mb-10 btn btn-outline btn-ghost">< FaGithub /> <span className='ml-2'>GitHub</span></button>
+                            <button onClick={handleGitHUbSignIn} className=" mb-10 btn btn-outline btn-ghost">< FaGithub /> <span className='ml-2'>GitHub</span></button>
                         </div>
                     </div>
                 </div>

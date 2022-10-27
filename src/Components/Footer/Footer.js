@@ -3,7 +3,7 @@ import { CgBee } from 'react-icons/cg';
 
 const Footer = () => {
     return (
-        <div className="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+        <div className="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 border-t">
             <div className="grid gap-16 row-gap-10 mb-8 lg:grid-cols-6">
                 <div className="md:max-w-md lg:col-span-2">
                     <a
@@ -13,16 +13,16 @@ const Footer = () => {
                         className="inline-flex items-center"
                     >
                         <span className='text-3xl'><CgBee /></span>
-                        <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
+                        <span className="ml-2 text-xl font-bold tracking-wide  uppercase text-violet-600">
                             Tech Bee
                         </span>
                     </a>
                     <div className="mt-4 lg:max-w-sm">
-                        <p className="text-sm text-gray-800">
+                        <p className="text-sm  text-violet-600">
                             Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                             accusantium doloremque laudantium, totam rem aperiam.
                         </p>
-                        <p className="mt-4 text-sm text-gray-800">
+                        <p className="mt-4 text-sm text-violet-600">
                             Eaque ipsa quae ab illo inventore veritatis et quasi architecto
                             beatae vitae dicta sunt explicabo.
                         </p>
@@ -30,7 +30,7 @@ const Footer = () => {
                 </div>
                 <div className="grid grid-cols-2 gap-5 row-gap-8 lg:col-span-4 md:grid-cols-4">
                     <div>
-                        <p className="font-semibold tracking-wide text-gray-800">
+                        <p className="font-semibold tracking-wide text-violet-600">
                             Category
                         </p>
                         <ul className="mt-2 space-y-2">
@@ -69,7 +69,7 @@ const Footer = () => {
                         </ul>
                     </div>
                     <div>
-                        <p className="font-semibold tracking-wide text-gray-800">
+                        <p className="font-semibold tracking-wide text-violet-600">
                             Business
                         </p>
                         <ul className="mt-2 space-y-2">
@@ -116,7 +116,7 @@ const Footer = () => {
                         </ul>
                     </div>
                     <div>
-                        <p className="font-semibold tracking-wide text-gray-800">Apples</p>
+                        <p className="font-semibold tracking-wide text-violet-600">Apples</p>
                         <ul className="mt-2 space-y-2">
                             <li>
                                 <a
@@ -161,7 +161,7 @@ const Footer = () => {
                         </ul>
                     </div>
                     <div>
-                        <p className="font-semibold tracking-wide text-gray-800">Cherry</p>
+                        <p className="font-semibold tracking-wide text-violet-600">Cherry</p>
                         <ul className="mt-2 space-y-2">
                             <li>
                                 <a
@@ -200,7 +200,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className="flex flex-col justify-between pt-5 pb-10 border-t sm:flex-row">
-                <p className="text-sm text-gray-600">
+                <p className="text-sm text-gray-600 text-violet-600">
                     © Copyright 2020 Tech Bee Inc. All rights reserved.
                 </p>
             </div>

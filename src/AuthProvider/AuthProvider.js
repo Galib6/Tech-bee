@@ -13,8 +13,12 @@ export const AuthContext = createContext()
 const AuthProvider = ({ children }) => {
     const [user, setUser] = useState()
     const [loading, setLoadding] = useState(true)
+    const [isDarkMode, setIsDarkMode] = useState("light");
 
     const signInwithGoolge = (provider) => {
+        return signInWithPopup(auth, provider)
+    }
+    const signInwithGitHub = (provider) => {
         return signInWithPopup(auth, provider)
     }
 
@@ -78,7 +82,10 @@ const AuthProvider = ({ children }) => {
         loading,
         createUser,
         updateUserProfile,
-        signIn
+        signIn,
+        setIsDarkMode,
+        isDarkMode,
+        signInwithGitHub
     }
 
     return (

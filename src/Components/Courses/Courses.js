@@ -12,7 +12,7 @@ const Courses = () => {
                 <div className='grid sm:grid-cols-1 gap-4 md:grid-cols-3'>
                     <div className='sidebar '>
                         <h1 className='text-center text-3xl mb-10'>All Category</h1>
-                        <ul className="menu bg-white w-200 rounded-lg  shadow-xl">
+                        <ul className="menu w-200 rounded-lg  shadow-xl">
                             {
                                 allCategory.map(category => <li
                                     key={category.name}
