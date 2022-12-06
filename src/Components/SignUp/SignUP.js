@@ -117,10 +117,12 @@ const SignUP = () => {
                                     <Link href="#" to="/login" className="label-text-alt link link-hover">{error}</Link>
                                 </label>
                             </div>
+                            <p>Have a Account? <Link to="/login">Login here. </Link></p>
                             <div className="form-control mt-6">
                                 <button className="btn btn-primary">Register</button>
                             </div>
                         </form>
+
                         <div className='flex justify-center'>
                             <button onClick={handleGoogleSignIn} className=" mb-5 mr-5 btn btn-outline btn-ghost">< FaGoogle /><span className='ml-2'>google</span></button>
                             <button onClick={handleGitHUbSignIn} className=" mb-10 btn btn-outline btn-ghost">< FaGithub /> <span className='ml-2'>GitHub</span></button>

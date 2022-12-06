@@ -18,9 +18,10 @@ const Coursedetails = () => {
                 <figure><img src={image_url} alt="courses" /></figure>
                 <div className="card-body">
                     <h2 className="card-title">
-                        <div className="badge badge-secondary">{title}</div>
+                        <div className=" text-4xl">{title}</div>
                     </h2>
-                    <p>{details}</p>
+                    <h1 className='text-4xl'>Details:</h1>
+                    <p className='text-3xl'><span>{details}</span><span>{details}</span></p>
                     <div className="card-actions justify-end">
                         <button className="btn btn-active btn-sm btn-accent"> <Link to={id}>Get Premium Access</Link> </button>
                         <div className="rating">
